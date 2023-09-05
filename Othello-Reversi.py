@@ -141,10 +141,10 @@ class Grid:
         self.y = rows
         self.x = columns
         self.size = size
-        self.whitetoken = loadImages('assest/WhiteToken.png', size)
-        self.blacktoken = loadImages('assest/BlackToken.png', size)
-        self.transitionBlackToWhite = [loadImages(f'assest/BlackToWhite{i}.png', self.size) for i in range(1, 4)]
-        self.transitionWhiteToBlack = [loadImages(f'assest/WhiteToBlack{i}.png', self.size) for i in range(1, 4)]
+        self.whitetoken = loadImages('AI project/assest/WhiteToken.png', size)
+        self.blacktoken = loadImages('AI project/assest/BlackToken.png', size)
+        self.transitionBlackToWhite = [loadImages(f'AI project/assest/BlackToWhite{i}.png', self.size) for i in range(1, 4)]
+        self.transitionWhiteToBlack = [loadImages(f'AI project/assest/WhiteToBlack{i}.png', self.size) for i in range(1, 4)]
         self.bg = self.loadBackGroundImages()
 
         self.tokens = {}
@@ -164,7 +164,7 @@ class Grid:
 
     def loadBackGroundImages(self):
         alpha = 'ABCDEFGHI'
-        spriteSheet = pygame.image.load('assest/wood.png').convert_alpha()
+        spriteSheet = pygame.image.load('AI project/assest/wood.png').convert_alpha()
         imageDict = {}
         for i in range(3):
             for j in range(7):
